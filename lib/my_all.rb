@@ -1,5 +1,4 @@
 require 'pry'
-=begin
 
 def my_all?(collection)
   i = 0
@@ -15,15 +14,3 @@ def my_all?(collection)
     true
   end
 end
-
-
-=end
-
-def my_all?(collection)
-  i = 0
-  while i < collection.length
-    yield(collection[i])
-    i = i + 1
-  end
-end
-binding.pry
